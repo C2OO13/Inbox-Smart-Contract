@@ -9,7 +9,7 @@ let provider = new HDWalletProvider({
     mnemonic: {
       phrase: mnemonicPhrase
     },
-    providerOrUrl: "https://kovan.infura.io/v3/41fb43be2a1e40d5ac7fb04b54e5e7c9"
+    providerOrUrl: process.env.INFURA_KOVAN_URL
 });
 
 const web3 = new Web3(provider);
